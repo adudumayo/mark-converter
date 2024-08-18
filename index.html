@@ -21,13 +21,17 @@
         <label for='to'>To:</label>
         <input id='to'></input>
         <br><br>
-        <button onclick='calculate()'>Calculate</button>
+        <button onclick='calculate(event)'>Calculate</button>
     </form>
 
     <p>Answer: </p>
     <div id='answer'></div>
     <script>
-        function calculate() {
+        function calculate(event) {
+            if (event) {
+                event.preventDefault();
+            }
+
             var fromValue = document.getElementById('from').value;
             var toValue = document.getElementById('to').value;
             var answer = fromValue + toValue;
