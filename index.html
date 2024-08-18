@@ -13,12 +13,15 @@
 <body>
     <h1>Hello and welcome</h1>
     <h2>This Is A Mark Converter</h2>
-    <p>From: </p> 
-    <input type='text' id='from'>
-    <button onclick='storeFrom'>Enter</button>
-    <p>To: </p>
-    <input type='text' id='to'>
-    <button onclick='storeFrom'>Enter</button>
+
+    <form>
+        <label for='from'>From:</label>
+        <input id='from'></input>
+        <br>
+        <label for='to'>To:</label>
+        <input id='to'></input>
+    </form>
+
     <p>Answer: </p>
     <div id='answer'></div>
     <script>
